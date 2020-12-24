@@ -214,7 +214,7 @@
                             </script>
                             <!-- End Google Tag Manager -->
                             <!-- <div class="heading-sup-title">Stake SEED get TREE</div> -->
-                            <h2 class="heading-title heading--half-colored">Liquidity Farming</h2>
+                            <h2 class="heading-title heading--half-colored">Buy Seed</h2>
                             <!-- <div class="heading-text">built on Binance smart Chain, having a limited Governance token $SEED and utility Token $TREEbuilt on Binance smart Chain, having a limited Governance token $SEED and utility Token $TREE which is unlimited in supply</div> -->
                         </header>
                     </div>
@@ -223,52 +223,32 @@
         </section>
 
         <section class="bg-dotted-map ">
-            <div class="container ">
-                <div class="row medium-padding300 align-center ">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                        <!-- <img class="primary-dots mb30 " src="img/dots.png " alt="dots "> -->
-
-                        <header class="crumina-module crumina-heading heading--h2 heading--with-decoration ">
-                            <!-- Google Tag Manager -->
-                            <script>
-                                (function(w, d, s, l, i) {
-                                    w[l] = w[l] || [];
-                                    w[l].push({
-                                        'gtm.start': new Date().getTime(),
-                                        event: 'gtm.js'
-                                    });
-                                    var f = d.getElementsByTagName(s)[0],
-                                        j = d.createElement(s),
-                                        dl = l != 'dataLayer' ? '&l=' + l : '';
-                                    j.async = true;
-                                    j.src =
-                                        '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
-                                    f.parentNode.insertBefore(j, f);
-                                })(window, document, 'script', 'dataLayer', 'GTM-TKGD7NP');
-                            </script>
-                            <!-- End Google Tag Manager -->
-                            <h2 class="heading-title weight-normal ">Farming</h2>
-                            <!-- <div class="heading-text ">Staking</div> -->
-                        </header>
-
-                        <div class="counters ">
-                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px; margin-bottom: 10px;">
-                                <div class="crumina-module crumina-crypto-converter">
-                                    <img src="img/seed-bnb.png" />
-                                </div>
+            <div class="container align-center ">
+                <div class="row medium-padding100">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
+                        <div class="crumina-module crumina-pricing-table pricing-table--style1">
+                            <div class="pricing-thumb">
+                                <img src="img/seed.png" class="woox-icon" alt="Litecoin">
                             </div>
-
-                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px; margin-bottom: 10px;">
-                                <div class="crumina-module crumina-crypto-converter">
-                                    <img src="img/seed-btc.png" />
-                                </div>
+                            <h5 class="pricing-title">SEED <span>SEED</span></h5>
+                            <div class="price">
+                                <img src="img/qrcode.png">
                             </div>
-
-                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px; margin-bottom: 10px;">
-                                <div class="crumina-module crumina-crypto-converter">
-                                    <img src="img/seed-busd.png" />
-                                </div>
-                            </div>
+                            <ul class="pricing-tables-position">
+                                <li class="position-item">
+                                    <div class="currency-details-item">
+                                        <h6 class="title">Wallet address:</h6>
+                                        <input type="text" style="background-color: transparent; border-color: transparent;" readonly value="0x832E9D4f41De6F06E4511376E34aF81bf1c59268" id="address" />
+                                    </div>
+                                </li>
+                                <li class="position-item">
+                                    <div class="currency-details-item">
+                                        <h6 class="title">Mimimum purchase amount:</h6>
+                                        <h6 class="value">$100 USD</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button onclick="myFunction()" class="btn btn--large btn--green-light btn--transparent">Copy wallet address</button>
                         </div>
                     </div>
                 </div>
@@ -410,6 +390,15 @@
     <!-- SVG icons loader -->
     <script src="js/svg-loader.js"></script>
     <!-- /SVG icons loader -->
+    <script>
+        function myFunction() {
+            var copyText = document.getElementById("address");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
 
 </body>
 

@@ -172,10 +172,10 @@
 
                     </nav>
 
-                    <select class="woox--select language-switcher " data-minimum-results-for-search="Infinity " data-dropdown-css-class="language-switcher-dropdown ">
+                    <!-- <select class="woox--select language-switcher " data-minimum-results-for-search="Infinity " data-dropdown-css-class="language-switcher-dropdown ">
                         <option value="English " data-href=" ">English</option>
-                    </select>
-
+                    </select> -->
+                    <a href="buy.html" class="btn btn--large btn--secondary btn--transparent">Buy Seed</a>
             </div>
         </div>
     </header>
@@ -416,7 +416,7 @@
 
         </section>
 
-        <section class="medium-padding120 responsive-align-center ">
+        <section id="buy_seeds" class="medium-padding120 responsive-align-center ">
             <div class="container ">
                 <div class="row bg-2 ">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mb30 ">
@@ -471,11 +471,11 @@
                                 <div class="crumina-countdown " data-date="2019-01-01 00:00:00 "></div>
                             </div> -->
 
-                            <a href="tokens.html " class="btn btn--large btn--green-light ">
+                            <a href="buy.html" class="btn btn--large btn--green-light ">
                                 Buy SEED Tokens
                             </a>
 
-                            <div class="crumina-module crumina-skills-item skills-item--bordered ">
+                            <!-- <div class="crumina-module crumina-skills-item skills-item--bordered ">
                                 <div class="skills-item-info ">
                                     <span class="skills-item-title ">$1.2M<span
                                             class="skills-item-count c-primary "><span class="count-animate "
@@ -487,15 +487,15 @@
                                     <span class="skills-item-meter-active bg-primary-color " style="width: 10% "></span>
                                 </div>
                                 <span class="add-info ">
-                                    <!-- <span><span class="c-link-color ">Softcap</span> in 976 days</span>
-                                <span class="c-link-color ">Hardcap</span> -->
+                                    <span><span class="c-link-color ">Softcap</span> in 976 days</span>
+                                <span class="c-link-color ">Hardcap</span>
                                 </span>
-                            </div>
+                            </div> -->
 
                             <div class="price-wrap ">
                                 <div class="token-price ">
-                                    Listing Price:
-                                    <div class="price-value ">$1500</div>
+                                    Mimimum purchase amount:
+                                    <div class="price-value ">$100</div>
                                 </div>
                                 <div class="token-total ">
                                     Total SEED Tokens:
@@ -644,6 +644,23 @@
     <!-- SVG icons loader -->
     <script src="js/svg-loader.js "></script>
     <!-- /SVG icons loader -->
+    <script>
+        $("myElement").addEvent("click", function() {
+            var SM = new SimpleModal({
+                "btn_ok": "Confirm button"
+            });
+            SM.addButton("Action button", "btn primary", function() {
+                alert("Add your code");
+                this.hide();
+            });
+            SM.addButton("Cancel", "btn");
+            SM.show({
+                "model": "modal",
+                "title": "Title",
+                "contents": "Your message..."
+            });
+        });
+    </script>
 
 </body>
 
